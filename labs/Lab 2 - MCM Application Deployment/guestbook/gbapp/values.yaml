@@ -1,0 +1,14 @@
+replicaCount: 1
+
+appInClusterNamespace:
+
+targetCluster:
+  labelSelector:
+    matchLabels:
+      vendor: "ICP"
+      region: "US"
+      environment: "Dev"
+      datacenter: "rochester"
+      owner: "offering"
+  resourceSelector:
+    type: cpu
